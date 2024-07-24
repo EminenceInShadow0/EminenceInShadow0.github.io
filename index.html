@@ -84,11 +84,47 @@
                 margin-bottom: 20px; /* Add margin to separate from left panel */
             }
         }
+
+        @media (min-width: 769px) {
+            .container {
+                flex-direction: row; /* Display panels side by side on desktop */
+                align-items: flex-start; /* Align items to the top */
+            }
+            .left-panel {
+                order: -1; /* Move left panel to the top in the row */
+                padding-right: 20px; /* Add right padding for spacing */
+            }
+            .right-panel {
+                flex-basis: 400px; /* Fixed width for right panel */
+                margin-left: 20px; /* Add margin to separate from left panel */
+            }
+        }
     </style>
 </head>
 <body>
     <h1>The Eminence in Shadow - Cid Kagenou</h1>
     <div class="container">
+        <div class="left-panel">
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Shadow Manipulation</li>
+                    <li>Tactical Planning</li>
+                    <li>Stealth Mastery</li>
+                    <li>Combat Strategy</li>
+                    <li>Intellectual Analysis</li>
+                    <li>Master of Disguise</li>
+                    <li>Information Gathering</li>
+                    <li>Psychological Warfare</li>
+                    <li>Resource Management</li>
+                    <li>Leadership</li>
+                    <li>Adaptive Learning</li>
+                    <li>Dark Arts Knowledge</li>
+                    <li>Master Strategist</li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="right-panel">
             <img class="footer-img" src="Shadow-MN.webp" alt="Background Image">
             
@@ -115,27 +151,6 @@
                     <p>- Cid Kagenou</p>
                 </div>
             </section>
-        </div>
-
-        <div class="left-panel">
-            <div class="section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Shadow Manipulation</li>
-                    <li>Tactical Planning</li>
-                    <li>Stealth Mastery</li>
-                    <li>Combat Strategy</li>
-                    <li>Intellectual Analysis</li>
-                    <li>Master of Disguise</li>
-                    <li>Information Gathering</li>
-                    <li>Psychological Warfare</li>
-                    <li>Resource Management</li>
-                    <li>Leadership</li>
-                    <li>Adaptive Learning</li>
-                    <li>Dark Arts Knowledge</li>
-                    <li>Master Strategist</li>
-                </ul>
-            </div>
         </div>
     </div>
 </body>
