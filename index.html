@@ -12,8 +12,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align items to the top */
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center items horizontally */
             min-height: 100vh;
             overflow-x: hidden; /* Hide horizontal overflow */
         }
@@ -38,6 +38,7 @@
             color: #fff;
             font-size: 2.5rem;
             margin-bottom: 20px;
+            text-align: center; /* Center align title */
         }
         h2 {
             color: #ffd700; /* Gold color for headings */
@@ -75,47 +76,19 @@
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .container {
-                flex-direction: column; /* Stack panels vertically on smaller screens */
-            }
-            .left-panel, .right-panel {
-                width: 100%; /* Full width for both panels */
-                margin: 0; /* Remove margin for full width */
+                flex-direction: column; /* Stack panels vertically */
             }
             .right-panel {
-                margin-top: 20px; /* Add margin to separate from left panel */
+                order: -1; /* Move right panel to the top */
+                margin: 0; /* Remove margin for full width */
+                margin-bottom: 20px; /* Add margin to separate from left panel */
             }
         }
     </style>
 </head>
 <body>
+    <h1>The Eminence in Shadow - Cid Kagenou</h1>
     <div class="container">
-        <div class="left-panel">
-            <div class="section">
-                <header>
-                    <h1>The Eminence in Shadow - Cid Kagenou</h1>
-                </header>
-                
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Shadow Manipulation</li>
-                        <li>Tactical Planning</li>
-                        <li>Stealth Mastery</li>
-                        <li>Combat Strategy</li>
-                        <li>Intellectual Analysis</li>
-                        <li>Master of Disguise</li>
-                        <li>Information Gathering</li>
-                        <li>Psychological Warfare</li>
-                        <li>Resource Management</li>
-                        <li>Leadership</li>
-                        <li>Adaptive Learning</li>
-                        <li>Dark Arts Knowledge</li>
-                        <li>Master Strategist</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-        
         <div class="right-panel">
             <img class="footer-img" src="Shadow-MN.webp" alt="Background Image">
             
@@ -142,6 +115,33 @@
                     <p>- Cid Kagenou</p>
                 </div>
             </section>
+        </div>
+
+        <div class="left-panel">
+            <div class="section">
+                <header>
+                    <h1>The Eminence in Shadow - Cid Kagenou</h1>
+                </header>
+                
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Shadow Manipulation</li>
+                        <li>Tactical Planning</li>
+                        <li>Stealth Mastery</li>
+                        <li>Combat Strategy</li>
+                        <li>Intellectual Analysis</li>
+                        <li>Master of Disguise</li>
+                        <li>Information Gathering</li>
+                        <li>Psychological Warfare</li>
+                        <li>Resource Management</li>
+                        <li>Leadership</li>
+                        <li>Adaptive Learning</li>
+                        <li>Dark Arts Knowledge</li>
+                        <li>Master Strategist</li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </div>
 </body>
